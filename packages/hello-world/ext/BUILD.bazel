@@ -1,0 +1,15 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "go_sequencer",
+    srcs = ["counting.go"],
+    importpath = "github.com/hardyantz/gazelle-bazel/packages/hello-world/ext",
+    visibility = ["//visibility:public"],
+)
+
+go_library(
+    name = "go_default_library",
+    srcs = ["counting.go"],
+    importpath = "github.com/hardyantz/go-hello-world/ext",
+    visibility = ["//visibility:public"],
+)
